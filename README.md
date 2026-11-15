@@ -27,6 +27,9 @@ Bu projede SAMİB üyesi Çakmak Vinç'in çift kirişli portal vinci, yeni **Ma
 | 2 | IEC 62443 Mini Workshop | Zone / Conduit Diagram | [lab2_Gizem_Dusmez.pdf](lab-2-iec62443-zone-conduit/lab2_Gizem_Dusmez.pdf) |
 | 3 | Threat & Risk + Risk Matrix | Risk Register | [lab3_Gizem_Dusmez.pdf](lab-3-threat-risk-matrix/lab3_Gizem_Dusmez.pdf) |
 | 4 | Secure Remote Access | Secure Architecture | [lab4_Gizem_Dusmez.pdf](lab-4-secure-remote-access/lab4_Gizem_Dusmez.pdf) |
+| 5 | SBOM / CVE / Patch | Vulnerability Decision | [lab5_Gizem_Dusmez.pdf](lab-5-sbom-cve-patch/lab5_Gizem_Dusmez.pdf) |
+| 6 | CRA Incident Simulation | Incident Workflow | [lab6_Gizem_Dusmez.pdf](lab-6-cra-incident-simulation/lab6_Gizem_Dusmez.pdf) |
+| 7 | AI Safety Challenge | AI Fail-Safe Decision | [lab7_Gizem_Dusmez.pdf](lab-7-ai-safety-challenge/lab7_Gizem_Dusmez.pdf) |
 | – | SWOT Analizi | – | *Hazırlanıyor* |
 
 ## Föy özetleri
@@ -43,6 +46,24 @@ Bu projede SAMİB üyesi Çakmak Vinç'in çift kirişli portal vinci, yeni **Ma
 S2 ve S3'ün skoru düşük olsa da şiddet değeri 3 olduğu için öncelik listesinde öne alındı.
 
 **Lab 4 – Secure Remote Access:** Uzak erişim mimarisi beş ilkeyle yeniden tasarlandı: ara nokta (jump server), VPN, MFA ile kişisel hesap, tam kayıt ve varsayılan kapalı. Emniyet fonksiyonlarının HoistSense+ yazılımından bağımsız çalışması bir gereksinim olarak tanımlandı.
+
+**Lab 5 – SBOM / CVE / Patch:** Kritik CVE (CVSS 9.8), HoistSense+ MK-III'ün haberleşme kütüphanesine uyarlandı. Üç şart (bileşen var, sürüm etkileniyor, buluttan ulaşılabilir) sağlandığı için CVE vinci gerçekten etkiliyor. Kararlar:
+- Üretim durdurulmaz; bulut bağlantısı kesilir ve vinç yerel modda çalışır.
+- Yama sırasıyla test tezgâhında, tek vinçte ve sonra tüm vinçlerde uygulanır.
+- Değişen kod emniyetle ilgiliyse aşırı yük fonksiyonu yeniden test edilir.
+- Yama uygulanamıyorsa telafi edici önlem: yerel mod, segmentasyon, ağ izleme ve vardiya başı fonksiyon testi.
+
+**Lab 6 – CRA Incident Simulation:** Servis hesabına yetkisiz giriş senaryosu vince uyarlandı. Senaryodaki ışık perdesi parametrelerinin vinçteki karşılığı aşırı yük eşiği ve kalibrasyondur. Müdahale sırası:
+1. Önce emniyet: yük indirilir, vinç kilitlenir.
+2. Ardından kanıt: kart resetlenmez, loglar korunur.
+3. CRA zaman çizgisi: 24 saatte erken uyarı, 72 saatte bildirim, 14 günde son rapor. Bildirim yükümlülüğü imalatçıdadır (CMAK → ENISA/CSIRT).
+
+**Lab 7 – AI Safety Challenge:** Vince YZ'li kamerayla "yük altında personel algılama" eklenmesi planlanan bir senaryo olarak değerlendirildi. Temel ilke: YZ yalnızca destek fonksiyonudur; asıl emniyet YZ'den bağımsız, sertifikalı bir kanalda kalır. Üç başarısızlık için güvenli davranış:
+- Model yanlış sınıflandırırsa: fail-safe ve human override.
+- Girdi manipüle edilirse: monitoring ve çapraz kontrol.
+- Güven skoru düşerse: confidence threshold ve fallback.
+
+Ayrıca yeni Makine Emniyeti Yönetmeliği EK-1 Kısım A ve AB Yapay Zekâ Yasası açısından da değerlendirildi.
 
 ## Not
 
