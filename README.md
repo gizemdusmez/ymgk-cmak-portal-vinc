@@ -1,7 +1,5 @@
 # YMGK Dönem Projesi – CMAK Çift Kirişli Portal Vinç
 
-**Öğrenci:** Gizem Düşmez · **No:** 230541009 · **Grup:** 4B Gündüz
-**Bölüm:** Fırat Üniversitesi Teknoloji Fakültesi – Yazılım Mühendisliği
 
 ## Proje konusu
 
