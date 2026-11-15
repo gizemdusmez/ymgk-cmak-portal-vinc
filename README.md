@@ -30,7 +30,7 @@ Bu projede SAMİB üyesi Çakmak Vinç'in çift kirişli portal vinci, yeni **Ma
 | 5 | SBOM / CVE / Patch | Vulnerability Decision | [lab5_Gizem_Dusmez.pdf](lab-5-sbom-cve-patch/lab5_Gizem_Dusmez.pdf) |
 | 6 | CRA Incident Simulation | Incident Workflow | [lab6_Gizem_Dusmez.pdf](lab-6-cra-incident-simulation/lab6_Gizem_Dusmez.pdf) |
 | 7 | AI Safety Challenge | AI Fail-Safe Decision | [lab7_Gizem_Dusmez.pdf](lab-7-ai-safety-challenge/lab7_Gizem_Dusmez.pdf) |
-| – | SWOT Analizi | – | *Hazırlanıyor* |
+| – | **SWOT Analizi** | SWOT + TOWS Strateji Matrisi | [SWOT_Analizi_CMAK_Gizem_Dusmez.pdf](swot-analizi/SWOT_Analizi_CMAK_Gizem_Dusmez.pdf) · [özet](swot-analizi/README.md) |
 
 ## Föy özetleri
 
@@ -64,6 +64,8 @@ S2 ve S3'ün skoru düşük olsa da şiddet değeri 3 olduğu için öncelik lis
 - Güven skoru düşerse: confidence threshold ve fallback.
 
 Ayrıca yeni Makine Emniyeti Yönetmeliği EK-1 Kısım A ve AB Yapay Zekâ Yasası açısından da değerlendirildi.
+
+**SWOT Analizi:** CMAK'ın iç ve dış etkenleri yeni yönetmelik takvimiyle (CRA, 20.01.2027, YZ Yasası) birlikte değerlendirildi. Bulgular TOWS matrisiyle stratejilere ve bir uyum yol haritasına çevrildi. Lab 1–7 bulgularının SWOT'taki karşılıkları ayrı bir tabloda eşleştirildi.
 
 ## Not
 
